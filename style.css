@@ -40,15 +40,15 @@ header {
   margin: 20px;
   height: 200px;
   width: 450px;
-  border: 1px solid rgb(0, 3, 49);
+  border: 1px solid rgb(168, 255, 233);
   border-collapse: collapse;
 }
 .main-table td {
-  border: 1px solid rgb(0, 3, 49);
+  border: 1px solid rgb(168, 255, 233);
   text-align: center;
 }
 .main-table tr:nth-child(2n) {
-  background-color: rgb(255, 174, 174);
+  background-color: rgb(168, 255, 233);
 }
 .content li {
   margin-left: 25px;
@@ -59,7 +59,7 @@ form {
 }
 footer {
   width: 100%;
-  background-color: rgb(255, 169, 169);
+  background-color: rgb(152, 150, 240);
   height: 35px;
 }
 .footer p {
