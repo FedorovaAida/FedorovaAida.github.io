@@ -1,8 +1,8 @@
 body
 {
-  max-width:600px;
+  max-width:1000px;
   background-color:rgb(152,150,240);
-  text-align: center;
+  text-align: right;
   height: 300px;
   margin: 0 auto;
 }
