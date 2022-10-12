@@ -1,9 +1,9 @@
 body
 {
-  max-width:1000px;
+  max-width:10px;
   background-color:rgb(152,150,240);
-  text-align: right;
-  height: 300px;
+  text-align: left;
+  height: 10px;
   margin: 0 auto;
 }
 
