@@ -1,7 +1,7 @@
 body
 {
   max-width:600px;
-  background-color:rgb(179,238,238);
+  background-color:rgb(152,150,240);
   text-align: center;
   height: 300px;
   margin: 0 auto;
@@ -9,5 +9,5 @@ body
 
 #nachalo
 {
-  background-color:  rgb(65,105,225);
+  background-color:  rgb(168,255,233);
 }
