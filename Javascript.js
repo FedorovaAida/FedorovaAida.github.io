@@ -8,7 +8,7 @@ function onClick()
   kol = quantity; sum = price;
   
   if (kol>0 && kol!=NaN && sum>0 && sum!=NaN)
-    sum_money.innerHTML="Итоговая сумма:"+kol*sum;    
+    sum_money.innerHTML="Итоговая стоимость:"+kol*sum;    
   else sum_money.innerText="Неккоретно заполнены значения, попробуйте еще раз";    
 }
 window.document.addEventListener("DOMContentLoaded", 
