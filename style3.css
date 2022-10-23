@@ -1,18 +1,12 @@
-body
-{
-  max-width:1900px;
-  background-color:rgb(152,150,240);
-  text-align: center;
-  height: 800px;
-  margin: 0 auto;
+body{
+  max-width:600px;
+background-color:rgb(179,238,238);
+text-align: center;
+height: 300px;
+margin: 0 auto;}
+#main{
+background-color:  rgb(65,105,225);
 }
-
-#nachalo
-{
-  background-color:  rgb(168,255,233);
-}
-
-#m2
-{
-  background-color:  rgb(168,255,233);
+#m2{
+background-color:  rgb(65,105,225);
 }
