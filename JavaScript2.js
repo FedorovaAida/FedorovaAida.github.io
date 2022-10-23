@@ -53,16 +53,16 @@ function updatePrice() {
             }
         }
     });
-
-
+  
+  
     checkDiv = document.getElementById("checkboxes");
     if (select.value === "2"  select.value === "1") {
         checkDiv.style.display = "none";
     } else {
         checkDiv.style.display = "block";
     }
-
-
+  
+  
     checkboxes = document.querySelectorAll("#checkboxes input");
     checkboxes.forEach(function (checkbox) {
         if (checkbox.checked) {
@@ -72,7 +72,7 @@ function updatePrice() {
             }
         }
     });
-
+  
     prodPrice = document.getElementById("result");
     prodPrice.innerHTML = price * kol;
     if (/\D/.test(kol)) {
@@ -102,36 +102,36 @@ window.addEventListener("DOMContentLoaded", function () {
     var checkboxes;
     var kol;
     radioDiv.style.display = "none";
-
-
+  
+  
     s = document.getElementsByName("prodType");
     select = s[0];
-
+  
     select.addEventListener("change", function () {
         updatePrice();
     });
-
-
+  
+  
     radios = document.getElementsByName("prodOptions");
     radios.forEach(function (radio) {
         radio.addEventListener("change", function () {
             updatePrice();
         });
     });
-
-
+  
+  
     checkboxes = document.querySelectorAll("#checkboxes input");
     checkboxes.forEach(function (checkbox) {
         checkbox.addEventListener("change", function () {
             updatePrice();
         });
     });
-
+  
     kol = document.getElementById("kol");
     kol.oninput = function () {
         updatePrice();
     };
-
+  
     updatePrice();
 });
 
