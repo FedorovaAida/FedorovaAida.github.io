@@ -21,8 +21,35 @@
     </div>
   </form>
   
-  <br><input type="button" value="Рассчитать итоговую стоимость" id="btn" onClick="onClick();"></br>
-  <div id="sum_money"></div>
+   <br><input type="button" value="Рассчитать итоговую стоимость" id="btn" onClick="onClick();"></br>
+   <div id="sum_money"></div>
+    
+   <div class="app">
+        <form><div id="m2">
+        <br><p> Какое количество товара? </p>
+        <input type="text" id="kol" placeholder="Количество"><br>
+        <br><select name="prodType" id="select">
+           <option value="1" > Первый тип</option>
+           <option value="2">Второй тип</option>
+           <option value="3">Третий тип</option>
+        </select>
+       
+     <div id="radios" style="display: none;">
+         <label><input type="radio" name="prodOptions" value="option1"> Первая опция</label>
+         <label><input type="radio" name="prodOptions" value="option2"> Вторая опция</label>
+         <label><input type="radio" name="prodOptions" value="option3"> Третья опция</label>
+     </div>
+  
+     <div id="checkboxes" style="display: block;">
+         <label><input type="checkbox" name="prop1"> Чек-бокс</label>
+     </div>
+          
+   </div>
+          
+  </form>
+  <br><p>Итоговая стоимость: </p>
+   <div id="result"></div>
+ </div>
 
 </body>
 </html>
