@@ -1,23 +1,24 @@
-function onClick()
-{
-  var quantity=document.getElementById("quantity").value;
-  var price1=document.getElementById("price1").value;
-  var sum_money=document.getElementById("sum_money");
-  var kolvo; var sum;
-  sum_money.innerHTML = "";
-  kolvo = quantity; sum = price1;
-  
-  if (kolvo>0 && kolvo!=NaN && sum>0 && sum!=NaN)
-    sum_money.innerHTML="Итоговая стоимость:"+kol*sum;    
-  else sum_money.innerText="Неккоретно заполнены значения, попробуйте еще раз";    
+function onClick(){
+var kolvo=document.getElementById("kolvo").value;
+var stoim=document.getElementById("stoim").value;
+var resul=document.getElementById("resul");
+var a;
+var b;
+ resul.innerHTML = "";
+a = kolvo;
+b = stoim;
+if (a>0 && a!=NaN && b>0 && b!=NaN)
+resul.innerHTML=a*b;    
+else resul.innerText="Данные введены неверно";    
 }
-window.document.addEventListener("DOMContentLoaded", 
-function (event) 
-{
-  console.log("DOM fully loaded and parsed");
-  var sum = document.getElementById("btn");
-  sum.addEventListener("click", onClick);
+window.document.addEventListener("DOMContentLoaded", function (event) {
+    console.log("DOM fully loaded and parsed");
+    var b = document.getElementById("btn");
+    b.addEventListener("click", onClick);
 });
+
+
+
 var document;
 var window;
 var alert;
@@ -53,16 +54,16 @@ function updatePrice() {
             }
         }
     });
-  
-  
+
+
     checkDiv = document.getElementById("checkboxes");
     if (select.value === "2"  select.value === "1") {
         checkDiv.style.display = "none";
     } else {
         checkDiv.style.display = "block";
     }
-  
-  
+
+
     checkboxes = document.querySelectorAll("#checkboxes input");
     checkboxes.forEach(function (checkbox) {
         if (checkbox.checked) {
@@ -72,7 +73,7 @@ function updatePrice() {
             }
         }
     });
-  
+
     prodPrice = document.getElementById("result");
     prodPrice.innerHTML = price * kol;
     if (/\D/.test(kol)) {
@@ -102,36 +103,35 @@ window.addEventListener("DOMContentLoaded", function () {
     var checkboxes;
     var kol;
     radioDiv.style.display = "none";
-  
-  
+
+
     s = document.getElementsByName("prodType");
     select = s[0];
-  
+
     select.addEventListener("change", function () {
         updatePrice();
     });
-  
-  
+
+
     radios = document.getElementsByName("prodOptions");
     radios.forEach(function (radio) {
         radio.addEventListener("change", function () {
             updatePrice();
         });
     });
-  
-  
+
+
     checkboxes = document.querySelectorAll("#checkboxes input");
     checkboxes.forEach(function (checkbox) {
         checkbox.addEventListener("change", function () {
             updatePrice();
         });
     });
-  
+
     kol = document.getElementById("kol");
     kol.oninput = function () {
         updatePrice();
     };
-  
+
     updatePrice();
 });
-
