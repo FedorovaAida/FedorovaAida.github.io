@@ -1,23 +1,23 @@
-function onClick(){
-var kolvo=document.getElementById("kolvo").value;
-var stoim=document.getElementById("stoim").value;
-var resul=document.getElementById("resul");
-var a;
-var b;
- resul.innerHTML = "";
-a = kolvo;
-b = stoim;
-if (a>0 && a!=NaN && b>0 && b!=NaN)
-resul.innerHTML=a*b;    
-else resul.innerText="Данные введены неверно";    
+function onClick()
+{
+  var quantity=document.getElementById("quantity").value;
+  var price=document.getElementById("price").value;
+  var sum_money=document.getElementById("sum_money");
+  var kol; var sum;
+  sum_money.innerHTML = "";
+  kol = quantity; sum = price;
+  
+  if (kol>0 && kol!=NaN && sum>0 && sum!=NaN)
+    sum_money.innerHTML="Итоговая стоимость:"+kol*sum;    
+  else sum_money.innerText="Неккоретно заполнены значения, попробуйте еще раз";    
 }
-window.document.addEventListener("DOMContentLoaded", function (event) {
-    console.log("DOM fully loaded and parsed");
-    var b = document.getElementById("btn");
-    b.addEventListener("click", onClick);
+window.document.addEventListener("DOMContentLoaded", 
+function (event) 
+{
+  console.log("DOM fully loaded and parsed");
+  var sum = document.getElementById("btn");
+  sum.addEventListener("click", onClick);
 });
-
-
 
 var document;
 var window;
