@@ -41,12 +41,12 @@ function updatePrice() {
     if (priceIndex >= 0) {
         price = prices.prodTypes[priceIndex];
     }
-    if (select.value === "3"  select.value === "1") {
+    if (select.value === "3" || select.value === "1") {
         radioDiv.style.display = "none";
     } else {
         radioDiv.style.display = "block";
     }
-    radios.forEach(function (radio) {
+ radios.forEach(function (radio) {
         if (radio.checked) {
             optionPrice = prices.prodOptions[radio.value];
             if (optionPrice !== undefined) {
@@ -57,7 +57,7 @@ function updatePrice() {
 
 
     checkDiv = document.getElementById("checkboxes");
-    if (select.value === "2"  select.value === "1") {
+    if (select.value === "2" || select.value === "1") {
         checkDiv.style.display = "none";
     } else {
         checkDiv.style.display = "block";
