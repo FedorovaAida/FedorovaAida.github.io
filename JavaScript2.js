@@ -3,13 +3,14 @@ function onClick()
   var quantity=document.getElementById("quantity").value;
   var price=document.getElementById("price").value;
   var sum_money=document.getElementById("sum_money");
-  var kol; var sum;
+  var kolich=quantity;
+  var summa=price;
   sum_money.innerHTML = "";
-  kol = quantity; sum = price;
   
-  if (kol>0 && kol!=NaN && sum>0 && sum!=NaN)
-    sum_money.innerHTML="Итоговая стоимость:"+kol*sum;    
-  else sum_money.innerText="Неккоретно заполнены значения, попробуйте еще раз";    
+  if (kolich>0 && kolich!=NaN && summa>0 && summa!=NaN)
+    sum_money.innerHTML="Итоговая стоимость:"+kolich*summa;    
+  else 
+    sum_money.innerText="Неккоретно заполнены значения, попробуйте еще раз";    
 }
 window.document.addEventListener("DOMContentLoaded", 
 function (event) 
