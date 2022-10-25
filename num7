@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+      <title> Собачки </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src=" JavaScript7.js"></script>
+    <link rel="stylesheet"
+          type= "text/css"
+          href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet"
+          type= "text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+     <link rel="stylesheet" href="style7.css" >
+     </head>
+  <body>
+    <div class="picture">
+      <div class="picture-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3bDC-WyuHDj2zU8lX7rS7wQziDiDKtJ3RA&usqp=CAU.jpg" alt="1 картинка"></div>
+      <div class="picture-item"><img src="https://dostavka-buketov-52.ru/goods/cat_221676/buket-iz-matrikarii_356310_0ae64.jpg" alt="2 картинка"></div> 
+      <div class="picture-item"><img src="https://cvetynsk.ru/wp-content/uploads/2020/10/sp8ahvf1osu-900x900-1.jpg" alt="3 картинка"></div>
+      <div class="picture-item"><img src="https://lilinuage.ru/assets/cache_image/products/1297/s1200_0x0_4f1.jpg" alt="4 картинка"></div>
+      <div class="picture-item"><img src="https://a4files.ru/content/uploads/2017/07/cifra-5.jpg" alt="5 картинка"></div>
+      <div class="picture-item"><img src="https://printfiles.ru/files/uploads/raspechatat/tsyfry-0-9/6.jpg" alt="6 картинка"></div>
+      <div class="picture-item"><img src="https://a4files.ru/content/uploads/2017/07/cifra-7.jpg" alt="7 картинка"></div>
+      <div class="picture-item"><img src="https://printfiles.ru/files/uploads/raspechatat/tsyfry-formata-a4/8.jpg" alt="8 картинка"></div>
+      <div class="picture-item"><img src="https://printfiles.ru/files/uploads/raspechatat/tsyfry-0-9/9.jpg" alt="9 картинка"></div>
+      <div class="picture-item"><img src="https://www.meme-arsenal.com/memes/7ab167a3cea5ae8aa0212c22c8eaccd2.jpg" alt="10 картинка"></div>
+      <div class="picture-item"><img src="https://www.meme-arsenal.com/memes/6fcc592c14476c7174952b2a3780fca2.jpg" alt="11 картинка"></div>
+      <div class="picture-item"><img src="https://calendarbox.ru/wp-content/uploads/2020/06/a4-raspechatatka-zyfry-12-pred.png   " alt="12 картинка"></div>
+      <div class="picture-item"><img src="https://proprikol.ru/wp-content/uploads/2019/10/kartinki-13-2.jpg" alt="13 картинка"></div>
+      <div class="picture-item"><img src="https://klike.net/uploads/posts/2020-06/1593241884_14.jpg" alt="14 картинка"></div>
+      <div class="picture-item"><img src=" https://calendarbox.ru/wp-content/uploads/2020/06/a4-raspechatatka-zyfry-15-pred.png  " alt="15 картинка"></div>
+      <div class="picture-item"><img src=" https://calendarbox.ru/wp-content/uploads/2020/06/a4-raspechatatka-zyfry-16-pred.png  " alt="16 картинка"></div>
+    </div>
+  </body>
+  </html>
