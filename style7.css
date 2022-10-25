@@ -5,8 +5,6 @@
 body
 {
     background-color: rgb(203, 200, 247);
-    display:flex;
-    justify-content: center;
 }
 .picture div img{
   wigth:100px;
