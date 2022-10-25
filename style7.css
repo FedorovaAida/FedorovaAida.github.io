@@ -33,7 +33,7 @@ body
 }
 @media (min-width:560px){
   .picture div img{
-     width: 150px;
+     width: 960px;
       height: 175px;
     }
   .slick-prev{
