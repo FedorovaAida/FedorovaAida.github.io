@@ -10,9 +10,9 @@ body
     .images
     {
         text-align: center;
-        top: 30vh;
-        height: 40vh;
-        width: 100vw;
+        top: 10vh;
+        height: 20vh;
+        width: 80vw;
     }
     
     img
@@ -31,10 +31,10 @@ body
     .images
     {
         text-align: center;
-        top: 30vh;
-        height: 120px;
-        width: 100vw;
-        max-width: 980px;
+        top: 10vh;
+        height: 100px;
+        width: 80vw;
+        max-width: 960px;
     }
     
     img
