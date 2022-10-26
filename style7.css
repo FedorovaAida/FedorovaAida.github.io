@@ -5,15 +5,18 @@ body
     justify-content: center;
 }
 
-@media (max-width:560px) {
-    .picture{
+@media (max-width:560px)
+{
+    .picture
+    {
         text-align: center;
         top: 10vh;
         height: 20vh;
         width: 80vw;
     }
     
-    img{
+    img
+    {
         margin: 0 auto;
         padding: 0 auto;
         height: calc(35vw*0.7);
@@ -23,8 +26,10 @@ body
     }
 }
 
-@media (min-width:560px) {
-    .picture{
+@media (min-width:560px) 
+{
+    .picture
+    {
         text-align: center;
         top: 10vh;
         height: 100px;
@@ -32,7 +37,8 @@ body
         max-width: 960px;
     }
     
-    img{
+    img
+    {
         margin: 0 auto;
         padding: 0 auto;
         height: calc(15vw*0.7);
