@@ -7,7 +7,7 @@ body
 
 @media (max-width:560px)
 {
-    .picture
+    .images
     {
         text-align: center;
         top: 10vh;
@@ -28,7 +28,7 @@ body
 
 @media (min-width:560px) 
 {
-    .picture
+    .images
     {
         text-align: center;
         top: 10vh;
