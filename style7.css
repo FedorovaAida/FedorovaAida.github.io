@@ -21,8 +21,8 @@ body
         padding: 0 auto;
         height: calc(40vw*0.7);
         width: 40vw;
-        max-width: 190px;
-        max-height: 120px;
+        max-width: 185px;
+        max-height: 115px;
     }
 }
 
@@ -33,7 +33,7 @@ body
         text-align: center;
         top: 20vh;
         height: 110px;
-        width: 80vw;
+        width: 75vw;
         max-width: 960px;
     }
     
@@ -43,7 +43,7 @@ body
         padding: 0 auto;
         height: calc(25vw*0.7);
         width: 25vw;
-        max-width: 170px;
-        max-height: 125px;
+        max-width: 165px;
+        max-height: 120px;
     }
 }
