@@ -53,3 +53,22 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     });
   });
+
+function toLocalStorage() {
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const msg = document.getElementById("msg");
+    localStorage.setItem("name", name.value);
+    localStorage.setItem("email", email.value);
+    localStorage.setItem("msg", msg.value);
+  }
+  function hidePopUp() {
+    history.replaceState({ popup: "close" }, "popup", "?");
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+  function showPopUp() {
+    history.pushState({ popup: "open" }, "popup", "?form");
+    const popup = document.getElementById("popup");
+    popup.style.display = "block";
+  }
