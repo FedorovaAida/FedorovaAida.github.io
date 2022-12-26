@@ -41,34 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
       xhr.onload = function () {
         if (xhr.status !== 200) {
           alert(
-            Ошибка при выполнении запроса: ${xhr.status} - ${xhr.response.message}
+            Ошибка при попытки отправки формы: ${xhr.status} - ${xhr.response.message}
           );
         } else {
-          alert(Запрос удачно обработан!);
+          alert(Форма отправлена!);
           console.log(xhr.response);
         }
       };
       xhr.onerror = function () {
-        alert("Вызвать запрос не удалось");
+        alert(Не удалось выполнить отправку формы);
       };
     });
   });
-  
-  function toLocalStorage() {
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const msg = document.getElementById("msg");
-    localStorage.setItem("name", name.value);
-    localStorage.setItem("email", email.value);
-    localStorage.setItem("msg", msg.value);
-  }
-  function hidePopUp() {
-    history.replaceState({ popup: "close" }, "popup", "?");
-    const popup = document.getElementById("popup");
-    popup.style.display = "none";
-  }
-  function showPopUp() {
-    history.pushState({ popup: "open" }, "popup", "?form");
-    const popup = document.getElementById("popup");
-    popup.style.display = "block";
-  }
