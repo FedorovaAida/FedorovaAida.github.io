@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const msg = document.getElementById("msg");
     const check = document.getElementById("check");
     const form = document.getElementById("send-form");
-    const URL = "https://formcarry.com/s/bDY72En6G";
+    const URL = "https://formcarry.com/s/HhDnMI-5UW_";
     name.value = localStorage.getItem("name");
     email.value = localStorage.getItem("email");
     msg.value = localStorage.getItem("msg");
@@ -41,20 +41,20 @@ document.addEventListener("DOMContentLoaded", function () {
       xhr.onload = function () {
         if (xhr.status !== 200) {
           alert(
-            Ошибка при попытки отправки формы: ${xhr.status} - ${xhr.response.message}
+            Ошибка при выполнении запроса: ${xhr.status} - ${xhr.response.message}
           );
         } else {
-          alert(Форма отправлена!);
+          alert(Запрос удачно обработан!);
           console.log(xhr.response);
         }
       };
       xhr.onerror = function () {
-        alert(Не удалось выполнить отправку формы);
+        alert("Вызвать запрос не удалось");
       };
     });
   });
-
-function toLocalStorage() {
+  
+  function toLocalStorage() {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const msg = document.getElementById("msg");
