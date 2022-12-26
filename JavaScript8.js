@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
       xhr.onload = function () {
         if (xhr.status !== 200) {
           alert(
-            Ошибка при выполнении запроса: ${xhr.status} - ${xhr.response.message}
+            `Ошибка при выполнении запроса: ${xhr.status} - ${xhr.response.message}`
           );
         } else {
-          alert(Запрос удачно обработан!);
+          alert(`Запрос удачно обработан!`);
           console.log(xhr.response);
         }
       };
@@ -72,3 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById("popup");
     popup.style.display = "block";
   }
+  
