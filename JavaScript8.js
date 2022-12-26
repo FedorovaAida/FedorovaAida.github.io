@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       xhr.onload = function () {
         if (xhr.status !== 200) {
           alert(
-            `Ошибка при выполнении запроса: ${xhr.status} - ${xhr.response.message}`
+            `Ошибка при отправке формы: ${xhr.status} - ${xhr.response.message}`
           );
         } else {
           alert(`Запрос удачно обработан!`);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       };
       xhr.onerror = function () {
-        alert("Вызвать запрос не удалось");
+        alert("Отправить форму не удалось");
       };
     });
   });
